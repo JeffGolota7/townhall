@@ -28,42 +28,33 @@ section h1 {
 	padding-bottom: 0.25em;
 	margin: 0;
 }
-#nav_menu {
-	position: relative;
-	overflow: hidden;
+#nav_menu ul{
 	background-color: #800000;
-}
-#nav_menu ul {
-	list-style-type:none;
-	margin:0;
-	padding: 0;
+	width: 100%;
+	float:right;
+	margin: 0;
+	padding:0;
+	list-style:none;
 }
 #nav_menu ul li {
 	float: left;
-	width: 16.5416667%;
+	position: relative;
 }
 #nav_menu ul li a {
+	color: white;
 	display: block;
-	text-align: center;
 	padding: 1em;
 	text-decoration: none;
-	background-color: #800000;
-	color: white;
 	font-weight: bold;
 }
 #nav_menu ul li ul {
 	display: none;
-	position: absolute 100%;
+	position: absolute;
 }
 #nav_menu ul li:hover > ul {
 	display: block;
 }
-#nav_menu ul li ul li {
-	float: none;
-}
-#nav_menu ul ul {
-	position:absolute;
-}
+
 .current {
 	color: yellow !important;
 }
@@ -105,6 +96,8 @@ header {
 header img {
 	float: left;
 	padding: 0px 3.125%;
+	max-width: 40%;
+	min-width: 150px;
 }
 
 /* the styles for the section */
@@ -161,4 +154,40 @@ footer p {
 }
 .end {
 	font-weight: bold;
+}	
+@media only screen and (max-width: 959px) {
+	section h1 {
+		font-size: 135%;
+	}
+	section h2, aside h2 {
+		font-size: 120%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	header img {
+		float: none;
+	}
+	header {
+		text-align: center;
+	}
+	aside {
+		float: none;
+		padding: 0px 2.0833333333% 20px 2.0833333333%;
+		width: 97.92%;
+	}
+	section {
+		float: none;
+		width: 97.92%;
+	}
+	section img {
+		max-width: 30%;
+	}
+	aside div {
+		column-count: 2;
+	}
+}
+@media only screen and (max-width: 479px) {
+	html {
+		font-size: 90%;
+	}
 }
