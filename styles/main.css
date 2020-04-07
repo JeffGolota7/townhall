@@ -48,6 +48,9 @@ section h1 {
 	text-decoration: none;
 	font-weight: bold;
 }
+#nav_menu ul li ul li {
+	float: none;
+}
 #nav_menu ul li ul {
 	display: none;
 	position: absolute;
