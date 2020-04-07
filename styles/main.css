@@ -18,7 +18,7 @@ html {
 }
 
 section {
-	width: 54.6875%;
+	width: 75%;
 	float: right;
 	padding: 0px 2.0833333333% 2.0833333333% 2.0833333333%;
 }
@@ -39,6 +39,7 @@ section h1 {
 #nav_menu ul li {
 	float: left;
 	position: relative;
+	width: 20%;
 }
 #nav_menu ul li a {
 	color: white;
@@ -155,12 +156,24 @@ footer p {
 .end {
 	font-weight: bold;
 }	
+#mobile_menu {
+	display: none;
+}
 @media only screen and (max-width: 959px) {
 	section h1 {
 		font-size: 135%;
 	}
 	section h2, aside h2 {
 		font-size: 120%;
+	}
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	.slicknav_menu {
+		background-color: #800000 !important;
 	}
 }
 @media only screen and (max-width: 767px) {
