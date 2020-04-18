@@ -36,7 +36,7 @@
 			<li><a href="index.html">Luncheons</a></li>
 			<li><a href="index.html">Tickets</a></li>
 			<li><a href="index.html">About Us</a>
-				<ul>
+				<ul class="dropdown">
 					<li><a href = "#ourhistory">Our History</a></li>
 					<li><a href = "#board">Board of Directors</a></li>
 					<li><a href = "#speak">Past Speakers</a></li>
@@ -87,7 +87,14 @@
 		</aside>
 	</main>
 	<footer>
-		<p>&copy; 2018, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+		<p>
+			<script>
+				var today = new Date();
+				document.write("&copy;&nbsp");
+				document.write(today.getFullYear());
+				document.write(", San Joaquin Valley Town Hall, Fresno, CA 93755");
+			</script>
+		</p>
 	</footer>
 </body>
 </html>
