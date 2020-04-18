@@ -44,6 +44,12 @@ section h1 {
 	font-size: 105%;
 	padding-bottom: 0.25em;
 }
+#printButton {
+	padding: 0.25em;
+	background-image: linear-gradient(white, lightgrey);
+	border: 1px solid grey;
+	margin-top: 0.75em;
+}
 aside {
 	width: 215px;
 	float: left;
@@ -158,4 +164,10 @@ footer p {
 }
 .current {
 	color: yellow !important;
+}
+
+@media print {
+	#printButton {
+		display:none;
+	}
 }
